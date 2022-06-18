@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Grid.css" />
+    <title>Grid</title>
+    <style>
+      body {
+        background-color: #fff;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #fff;
+        padding: 10px;
+        gap: 10px;
+        width: 100px;
+        height: 580px;
+        text-align:center;
+      }
+
+      .gridcontainer > div {
+        padding: 20px;
+      }
+
+      .item1 {
+        /* grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 5; */
+        background-color: orangered;
+      }
+
+      .item2 {
+        grid-column-start: 8;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        background-color: rgb(255, 196, 0);
+      }
+
+      .item3 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 12;
+        background-color: rgb(13, 218, 44);
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="gridcontainer">
+      <div class="item1">E</div>
+      <div class="item2">A</div>
+      <div class="item3">A</div>
+    </main>
+  </body>
+</html>
+<div class="item"></div>
